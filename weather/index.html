@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="list">
+            <li id="city_del"><a href="#">DELHI</a></li>
+            <li id="city_gur"><a href="#">GURUGRAM</a></li>
+            <li id="city_cha"><a href="#">CHANDIGARH</a></li>
+            <li id="city_luc"><a href="#">LUCKNOW</a></li>
+            <li id="city_ban"><a href="#">BANGALORE</a></li>
+        </ul>
+    </nav>
+    <div id="head_cont">
+        <h1 id="heading">find my weather</h1>
+        <div id="city_inp">
+            <input type="text" id="city_ent" placeholder="Enter your city name">
+            <button onclick="find_city()" type="submit" >Search</button>
+        </div>    
+    </div>
+    <div id="container">
+        <section id="temp_cont" class="sub_cont">
+            <h1>Temp</h1>
+            <section>
+                <h2>Today's temp :<span id="Temprature">--</span></h2>
+                <h3>lowest : <span id="Min_temp">--</span></h3>
+                <h3>Heighest : <span id="Max_temp">--</span></h3>
+                <h3>Feels like: <span id="Feels_like">--</span></h3>
+            </section>    
+        </section>
+        <section id="cloud_cont" class="sub_cont">
+            <h1>Cloud</h1>
+            <section>
+                <h2>Clouds : <span id="Cloud_pct">--</span></h2>
+                <h3>Humidity : <span id="Humidity">--</span></h3>
+                <h3>wind speed : <span id="Wind_speed">--</span></h3>
+                <h3>Wind degrees : <span id="Wind_degrees">--</span></h3>
+            </section>    
+        </section>
+        <section id="air_cont" class="sub_cont">
+            <h1>Air Quality</h1>
+            <section>
+                <h2>Aqi :<span id="Overall_aqi">--</span></h2>
+                <h3>CO2 Aqi :<span id="CO2"></span></h3>
+                <h3>No2 Aqi :<span id="NO2"></span></h3>
+                <h3>PM2.5 :<span id="PM2_5"></span></h3>
+                <h3>SO2 Aqi:<span id="SO2"></span></h3>
+            </section>    
+        </section>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
